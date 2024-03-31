@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+:root{
+    --text-color:#eb4034;
+    --bg-color:#1c1c1c;
+    --text-white-color:#ffff;
+}
+
+.head-content{
+    background-image: url(./../../assets/Images/pexels-anush-gorak-1229356.jpg);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: auto;
+    height: 88.3vh;
+    object-fit: cover;
+}
+
+.head-content h5{
+    color: #eb4034;
+    font-size: 1.2em;
+    font-style: italic;
+    position: relative;
+    left:10%;
+    top:30%;
+    transition: 1s;
+}
+
+.head-content h2{
+    color: #ffff;
+    font-size: 2.7rem;
+    position: relative;
+    left: 10%;
+    top:30%;
+    transition: 1s;
+    margin-top: 5px;
+}
+
+.getbtn{
+    background-color: #eb4034;
+    color: #ffff;
+    position: relative;
+    left: 10%;
+    top:30%;
+    margin-top: 7px;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 8px 16px;
+    border-radius: 0px;
+    border-bottom-right-radius: 23px;
+    transition: 1s;
+}
+
+.getbtn:hover{
+    color: #1c1c1c;
+}
+
+@media screen and (max-width:750px) {
+    .column-1{
+        float:left;
+    }
+    .column-2{
+        float:right;
+    }
+    
+}

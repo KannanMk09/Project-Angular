@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+:root{
+    --text-color:#eb4034;
+    --bg-color:#1c1c1c;
+    --text-white-color:#ffff;
+}
+
+
+.navigation{
+    position: static;
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    background-color: #1c1c1cf3;
+}
+
+nav h3{
+    color: #e73737;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+nav .links{
+    color: #ffff;
+    font-weight: 500;
+    font-size: 1em;
+    transition: .6s;
+}
+
+nav .active{
+    color: #eb4034;
+}
+
+nav .active:hover{
+    color: #ffff;
+    cursor: pointer;
+}
+
+nav .links:hover{
+    color: #eb4034;
+    cursor: pointer;
+}
+
+nav li i{
+    color: #eb4034;
+    font-size: 1.8rem;
+}
+
+nav li .menu-bar button i{
+    background: transparent;
+    border: none;
+    display: none;
+}
+
+
+.link-btn{
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 2px solid #eb4034;
+    color:#ffff;
+    transition: .6s;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.link-btn:hover{
+    color: #1c1c1c;
+    cursor: pointer;
+    background-color: #eb4034;
+}
+
+.sidebar{
+    background-color: #18191A;
+    display: flex;
+}
+
+.sidebar-nav li{
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:750px) {
+    .navbars{
+        display: none;
+    }
+    .navigation{
+        justify-content: space-between;
+    }
+    nav li .menu{
+        display: block;
+    }
+}
+
+
+

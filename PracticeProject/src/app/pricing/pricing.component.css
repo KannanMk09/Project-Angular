@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+:root{
+    --text-color:#eb4034;
+    --bg-color:#1c1c1c;
+    --text-white-color:#ffff;
+}
+
+.price-content{
+    background-color: #1c1c1c;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    transition: 1s;
+}
+
+.title-Plan{
+    color:#eb4034;
+    font-size: 1.8em;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    transition: 1s;
+}
+
+.demo-box{
+    /* border:1px solid rgb(221, 28, 28); */
+    padding: 8px;
+    height: 80vh;
+}
+
+.col-content{
+    /* border:1px solid rgb(221, 28, 28); */
+    padding: 20px 30px;   
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.col-content h3{
+    color: #eb4034;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-style: italic;
+    transition: 1s;
+}
+
+.col-content p{
+    color: #ffffffb9;
+    font-size: .75em;
+    font-weight: 300;
+}
+
+.col-content ul{
+    list-style: none;
+}
+
+.col-content span{
+    color: #eb4034;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.col-content li{
+    color: #ffffffde;
+    font-size: 1em;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.getbtn{
+    background-color: #eb4034;
+    color: #ffff;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 8px 16px;
+    border-radius: 0px;
+    border-bottom-right-radius: 23px;
+    transition: 1s;
+    width: 70%;
+    border: none;
+
+}
+
+.getbtn:hover{
+    transform: translateY(4px);
+}
+
+.col-content h2{
+    margin-top: 20%;
+    color: #eb4034;
+}
+.col-content .inter{
+    margin-top: 8%;
+    color: #eb4034;
+}
+
+.col-content .dollar{
+    color: #ffff;
+    font-size: .5em;
+    font-weight: 400;
+}
+
+.Intermediate{
+    background-color: rgba(128, 128, 128, 0.164);
+    transition: 1s;
+}
+
+.Intermediate:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.Basic{
+    transition: 1s;
+}
+
+.Basic:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.Premium{
+    transition: 1s;
+}
+
+.Premium:hover{ 
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+    .price-content{
+        height: 60vh;;
+    }
+} 
+
+@media screen and (max-width:750px){
+    .price-content{
+        height:110vh;
+    }
+    .row{
+        column-gap: 10px;
+    }
+}
+
